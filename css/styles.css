@@ -46,6 +46,9 @@
 ul {
     padding-inline-start: 0;
 }
+img{
+    display: block;
+}
 
 .head {
     border-bottom: 1px solid var(--border-line-color);
@@ -156,7 +159,7 @@ ul {
     margin: 0;
     text-align: center;
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
 
 }
 
@@ -199,6 +202,10 @@ ul {
 }
 
 /* описание */
+.description{
+    margin: 0;
+    padding-top: 94px;
+}
 .description-list {
     display: flex;
     list-style: none;
@@ -206,7 +213,8 @@ ul {
 }
 
 .description-title {
-    margin: 0;
+    margin:0;
+    margin-bottom: 10px;
 
     color: var(--body-text-color);
     font-weight: 700;
@@ -231,7 +239,9 @@ ul {
 
 /* занятие */
 .lessons {
-    margin-bottom: 0;
+    margin: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .lessons-title {
@@ -250,30 +260,31 @@ ul {
 .lessons-list {
     list-style: none;
     display: flex;
-    padding-bottom: 94px;
-    width: calc((100% - 60px) / 3);
+    margin: 0;
 }
 
 .lessons-list li {
     margin-right: 30px;
+    width: calc((100% - 60px) / 3);
 }
 
 /* команда */
 .team {
     background: var(--second-background-color);
-    margin-bottom: 0;
-    margin-top: 0;
+    margin: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-title {
     margin: 0;
     margin-bottom: 50px;
-    padding-top: 94px;
+    
 
     color: var(--body-text-color);
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.19;
     text-align: center;
 
 }
@@ -290,15 +301,17 @@ ul {
 }
 .team-border{
     padding: 0;
-    margin-top:-4px ;
-    margin-bottom: 94px;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    border-top: none;
 }
 
 .team-name {
     margin: 0;
-    padding-top: 30px;
+    
     margin-bottom: 10px;
     text-align: center;
 
@@ -326,12 +339,17 @@ ul {
 
 /* футер */
 .footer {
-    background: var(--dark-background-color);
+    
+    background: var(--dark-background-color);   
+}
+.footer-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
 }
 
 .logo-footer {
     display: inline-block;
-    padding-top: 60px;
 
     text-decoration-line: none;
     color: var(--main-background-color);
@@ -345,7 +363,6 @@ ul {
 
 .address-list {
     margin: 0px;
-    padding-bottom: 60px;
 
     list-style: none;
 
@@ -445,28 +462,35 @@ ul {
 
 /* галерея */
 .galery{
-    margin-bottom: 0;
+    margin: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .galery-list {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    padding-bottom: 94px;
 
     list-style: none;
 }
 .galery-border {
+    margin: 0;
+    padding-left: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     border: 1px solid var(--border-color);
-    border-top: none;
-    margin-top: -4px;
-    margin-bottom: 30px;
-    
 }
 
 .galery-paragraph {
     width: calc((100% - 60px) / 3);
+    margin: 0;
     margin-right: 30px;
 }
+.galery-paragraph:nth-last-child( n+4 ){
+    margin-bottom: 30px;
+}
+
 
 .galery-list :nth-child(3n) {
     margin-right: 0;
@@ -476,8 +500,6 @@ ul {
 .galery-list p {
     margin: 0;
     margin-top: 4px;
-    padding-left: 24px;
-    padding-bottom: 20px;
 }
 
 .galery-link {
@@ -491,8 +513,6 @@ ul {
 
 .galery-title {
     margin: 0;
-    padding-left: 24px;
-    padding-top: 20px;
 
     text-decoration-line: none;
     color: var(--body-text-color);
